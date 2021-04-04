@@ -70,7 +70,7 @@ print([item for item in list if (type(item)==int) and (item % 2 == 0)])
 
 print(list[::2])
 
-print([item for item in list if (type(item)!=str) and (item >0)])
+print([item for item in list if (isinstance(item,(float,int))) and (item >0)])
 
 N = [1, 3, 4, 7, 9]
 m = 3
