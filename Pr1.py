@@ -46,3 +46,53 @@ m = int(input('Введите номер месяца'))
 a = ['Январь', 'Февраль', 'Март', 'Апрель', 'Май', 'Июнь', 'Июль', 'Август', 'Сентябрь', 'Октябрь', 'Ноябрь', 'Декабрь']
 print(a[m-1])
 
+#список
+list=['a',1,-2]
+print(list)
+
+list.append(1.2)
+print(list)
+
+del list[1]
+print(list)
+
+
+list.reverse()
+print (list)
+
+
+for i in list:
+    print(i)
+
+list=['a',1,-2,1.2]
+
+print([item for item in list if (type(item)==int) and (item % 2 == 0)])
+
+print(list[::2])
+
+print([item for item in list if (type(item)!=str) and (item >0)])
+
+N = [1, 3, 4, 7, 9]
+m = 3
+new_N = [{i for i in N if i % m == remainder} for remainder in {num % m for num in N}]
+print(new_N)
+
+l =  [3, 4.1, 2]
+n = [(a, b) for a in l for b in l if a < b]
+print (n)
+
+l={1:2,'a':3,-1:1,3:'a'};
+n=[i + l.get(i) for i in l if isinstance(i, (int, float)) and isinstance(l.get(i), (int, float))]
+print(n)
+
+l =  [3, 4.1, 2]
+n = [(a, b) for a in l for b in l if a < b]
+print (n)
+
+l = ['a',1,-2,1.2]
+n = dict(zip(l[0::2],l[1::2]))
+print(n)
+
+
+
+
